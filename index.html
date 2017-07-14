@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+            ul#galeria : {
+                list-style: none;
+                padding-left: 0;
+            }
+            ul#galeria li: {
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+            @media screen and (min-with: 700 px) {
+                ul#galeria li {
+                    margin: 0;
+                    display: inline-block;
+                    vertical-align:top;
+                    width:33%;
+                }
+            }
+        </script>
         <meta charset="utf-8">
         <title>Ejemplo udemy</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
     </head>
     <body bgColor="#CCCCFF">     
         <p>algún subtítulo arrregla fotos</p>
-        <h1>Algún título 1</h1>
+        <ul>
+            <li>Elemento 1<img src="./img/image1.jpg"></li>
+             <li>Elemento 2<img src="./img/image2.jpg"></li>
+
+        </ul>
     </body>
 </html>
